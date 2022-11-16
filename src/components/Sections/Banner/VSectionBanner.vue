@@ -8,7 +8,10 @@
           <VContainer width="1177">
             <div class="banner-slide_row">
               <div class="banner-slide_shape">
-                <img :src="item.shape" alt="" />
+                <picture>
+                  <source :srcset="item.pathWebp" />
+                </picture>
+                <img :src="item.shape" alt="slide" />
               </div>
 
               <VButton color="whiteSlide">заказать</VButton>
@@ -26,6 +29,7 @@
   import 'swiper/scss/pagination';
   import 'swiper/scss/effect-fade';
   import slide from '../../Image/slide.png';
+  import slideWebp from '../../Image/slide.webp';
   import shapeBanner from '../../Image/shabeBanner.png';
   import {Pagination} from 'swiper';
   import VButton from '../../UI/Button/VButton.vue';
@@ -36,12 +40,12 @@
     type: 'bullets',
   };
   const data = [
-    {id: 1, path: slide, shape: shapeBanner},
-    {id: 2, path: slide, shape: shapeBanner},
-    {id: 3, path: slide, shape: shapeBanner},
-    {id: 4, path: slide, shape: shapeBanner},
-    {id: 5, path: slide, shape: shapeBanner},
-    {id: 6, path: slide, shape: shapeBanner},
+    {id: 1, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 2, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 3, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 4, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 5, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 6, path: slide, shape: shapeBanner, pathWebp: slideWebp},
   ];
 </script>
 

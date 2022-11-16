@@ -1,31 +1,8 @@
 <template>
-  <img
-    ref="img"
-    v-if="isVisible === true"
-    :class="['img', `img_${ps}`]"
-    :src="sourse"
-    alt="img"
-  />
-  <img
-    ref="img"
-    v-if="isVisible === false"
-    :class="['img', `img_${ps}`]"
-    :data-src="sourse"
-    alt="img"
-  />
+  <img :class="['img', `img_${ps}`]" :src="sourse" alt="img" />
 </template>
 
 <script setup>
-  import {useIntersectionObserver} from '@vueuse/core';
-  import {ref} from 'vue';
-  const img = ref(null);
-  const isVisible = ref(false);
-  const {stop} = useIntersectionObserver(img, ([{isIntersecting}], observerElement) => {
-    isVisible.value = isIntersecting;
-    if (isIntersecting) {
-      stop();
-    }
-  });
   const props = defineProps({
     ps: {
       type: String,

@@ -17,6 +17,7 @@
         :id="item.id"
         :position="item.position"
         :src="item.src"
+        :srcWepb="item.srcWepb"
         :color="item.color"
       />
       <VItemSection :id="item.id" :color="item.color" :grid="item.grid" />
@@ -40,6 +41,11 @@
   import slide3 from '../components/Image/slide3.png';
   import slide4 from '../components/Image/slide4.png';
   import slide5 from '../components/Image/slide5.png';
+  import slide1Wepb from '../components/Image/slide1.webp';
+  import slide2Wepb from '../components/Image/slide2.webp';
+  import slide3Wepb from '../components/Image/slide3.webp';
+  import slide4Wepb from '../components/Image/slide4.webp';
+  import slide5Wepb from '../components/Image/slide5.webp';
 
   import VItemSectionImg from '../components/UI/ItemSections/VItemsSectionImg.vue';
   const dataSections = [
@@ -49,6 +55,7 @@
       color: '#996750',
       path: bot1,
       src: slide1,
+      srcWepb: slide1Wepb,
       flex: 'start',
     },
     {
@@ -58,6 +65,7 @@
       color: '#4D4C4C',
       path: bot2,
       src: slide2,
+      srcWepb: slide2Wepb,
       position: 'right',
       flex: 'end',
     },
@@ -67,6 +75,7 @@
       color: '#345E8F',
       path: bot3,
       src: slide3,
+      srcWepb: slide3Wepb,
     },
     {
       id: 4,
@@ -75,6 +84,7 @@
       color: '#B72C4E',
       path: bot4,
       src: slide4,
+      srcWepb: slide4Wepb,
       position: 'right',
     },
     {
@@ -83,6 +93,7 @@
       color: '#5CA07A',
       path: bot5,
       src: slide5,
+      srcWepb: slide5Wepb,
     },
   ];
 </script>

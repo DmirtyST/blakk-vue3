@@ -3,7 +3,10 @@
     <div class="itemImg_image">
       <VCenteredItem :path="path" />
     </div>
-    <VImg class="itemImg_bg" :sourse="src" ps="cover" />
+    <picture>
+      <source :srcset="srcWepb" />
+      <VImg class="itemImg_bg" :sourse="src" ps="cover" />
+    </picture>
 
     <div class="itemImg_leters">
       <div v-if="id === 1" class="itemImg-leters_b">
@@ -40,6 +43,10 @@
       default: '',
     },
     src: {
+      type: String,
+      default: '',
+    },
+    srcWepb: {
       type: String,
       default: '',
     },

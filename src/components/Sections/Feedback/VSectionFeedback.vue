@@ -4,13 +4,17 @@
     <div class="feedback_shape">
       <img :src="shape" alt="shape" />
     </div>
-    <img class="feedback_bg" :src="feedbackBg" alt="feedbackB" />
+    <picture>
+      <source :srcset="feedbackBgWebp" />
+      <img class="feedback_bg" :src="feedbackBg" alt="feedbackB" />
+    </picture>
     <VButton :icon="false" color="black">получить консультацию</VButton>
   </div>
 </template>
 
 <script setup>
   import feedbackBg from '../../Image/feedback.png';
+  import feedbackBgWebp from '../../Image/feedback.webp';
   import shape from '../../Image/Shapefeedback.png';
   import VButton from '../../UI/Button/VButton.vue';
 </script>
