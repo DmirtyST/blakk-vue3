@@ -86,6 +86,11 @@
         height: 295px;
         bottom: -15px;
         top: 5%;
+        transition: all linear 1.4s;
+        &-active {
+          transition: all linear 1.4s;
+          transform: scale(0.3);
+        }
       }
     }
   }
