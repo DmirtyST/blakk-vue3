@@ -4,7 +4,10 @@
       ref="img"
       :class="isVisible === true ? ' centeredItem_image' : 'centeredItem_image-active'"
     >
-      <img :src="path" :alt="alts" />
+      <picture>
+        <source :srcset="pathWebp" />
+        <img :src="path" :alt="alts" />
+      </picture>
     </div>
   </div>
 </template>
@@ -23,6 +26,10 @@
 
   const props = defineProps({
     path: {
+      type: String,
+      default: '',
+    },
+    pathWebp: {
       type: String,
       default: '',
     },

@@ -3,8 +3,11 @@
     <BaseHeader />
 
     <picture>
+      <source :srcset="`${screenMobileWebp} 550w`" media="(max-width:550px)" />
       <source :srcset="`${screenMobile} 550w`" media="(max-width:550px)" />
+      <source :srcset="`${screenTabletWebp} 768w`" media="(max-width:768px)" />
       <source :srcset="`${screenTablet} 768w`" media="(max-width:768px)" />
+      <source :srcset="screenWebp" />
       <VImg class="screen_image" ps="cover" :sourse="screen" alt="screenBg" />
     </picture>
     <VContainer width="1200">
@@ -30,6 +33,9 @@
   import screen from '../../Image/screen.png';
   import screenTablet from '../../Image/screenTablet.png';
   import screenMobile from '../../Image/screenMobile.png';
+  import screenWebp from '../../Image/screen.webp';
+  import screenTabletWebp from '../../Image/screenTablet.webp';
+  import screenMobileWebp from '../../Image/screenMobile.webp';
   import BaseHeader from '../../Layout/BaseHeader.vue';
   import VImg from '../../UI/Img/VImg.vue';
 </script>

@@ -10,6 +10,7 @@
     :is="item.section"
     :flex="item.flex"
     :path="item.path"
+    :pathWebp="item.pathWebp"
   >
     <VGrid>
       <VItemSectionImg
@@ -36,6 +37,11 @@
   import bot3 from '../components/Image/bot3.png';
   import bot4 from '../components/Image/bot4.png';
   import bot5 from '../components/Image/bot5.png';
+  import bot1Webp from '../components/Image/bot1.webp';
+  import bot2Webp from '../components/Image/bot2.webp';
+  import bot3Webp from '../components/Image/bot3.webp';
+  import bot4Webp from '../components/Image/bot4.webp';
+  import bot5Webp from '../components/Image/bot5.webp';
   import slide1 from '../components/Image/slide1.png';
   import slide2 from '../components/Image/slide2.png';
   import slide3 from '../components/Image/slide3.png';
@@ -57,6 +63,7 @@
       src: slide1,
       srcWepb: slide1Wepb,
       flex: 'start',
+      pathWebp: bot1Webp,
     },
     {
       id: 2,
@@ -68,6 +75,7 @@
       srcWepb: slide2Wepb,
       position: 'right',
       flex: 'end',
+      pathWebp: bot2Webp,
     },
     {
       id: 3,
@@ -76,6 +84,7 @@
       path: bot3,
       src: slide3,
       srcWepb: slide3Wepb,
+      pathWebp: bot3Webp,
     },
     {
       id: 4,
@@ -86,6 +95,7 @@
       src: slide4,
       srcWepb: slide4Wepb,
       position: 'right',
+      pathWebp: bot4Webp,
     },
     {
       id: 5,
@@ -94,6 +104,7 @@
       path: bot5,
       src: slide5,
       srcWepb: slide5Wepb,
+      pathWebp: bot5Webp,
     },
   ];
 </script>
