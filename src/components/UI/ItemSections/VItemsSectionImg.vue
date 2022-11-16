@@ -3,22 +3,23 @@
     <div class="itemImg_image">
       <VCenteredItem :path="path" />
     </div>
-    <img class="itemImg_bg" :src="src" alt="slideImage" />
+    <VImg class="itemImg_bg" :sourse="src" ps="cover" />
+
     <div class="itemImg_leters">
       <div v-if="id === 1" class="itemImg-leters_b">
-        <img :src="BDesk" alt="" />
+        <img :src="BDesk" alt="img" />
       </div>
       <div ref="img" v-if="id === 2" class="itemImg-leters_e">
-        <img :src="EDesk" alt="" />
+        <img :src="EDesk" alt="img" />
       </div>
       <div v-if="id === 3" class="itemImg-leters_s">
-        <img :src="SDesk" alt="" />
+        <img :src="SDesk" alt="img" />
       </div>
       <div v-if="id === 4" class="itemImg-leters_c">
-        <img :src="CDesk" alt="" />
+        <img :src="CDesk" alt="img" />
       </div>
       <div v-if="id === 5" class="itemImg-leters_g">
-        <img :src="GDesk" alt="" />
+        <img :src="GDesk" alt="img" />
       </div>
     </div>
   </div>
@@ -31,6 +32,7 @@
   import SDesk from '../../Image/SDesk.png';
   import CDesk from '../../Image/CDesk.png';
   import GDesk from '../../Image/GDesk.png';
+  import VImg from '../Img/VImg.vue';
 
   const props = defineProps({
     color: {
@@ -102,12 +104,6 @@
       }
     }
     &_bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
       object-position: 20% 5%;
       mix-blend-mode: normal;
       z-index: -1;
