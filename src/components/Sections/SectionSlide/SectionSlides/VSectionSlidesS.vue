@@ -153,6 +153,9 @@
         max-width: 158px;
         flex-direction: column;
         gap: 5px;
+        span {
+          opacity: 1;
+        }
       }
     }
   }

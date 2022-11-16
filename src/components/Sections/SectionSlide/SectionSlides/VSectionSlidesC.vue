@@ -120,6 +120,9 @@
         display: flex;
         flex-direction: column;
         gap: 15px;
+        span {
+          opacity: 1;
+        }
       }
     }
   }

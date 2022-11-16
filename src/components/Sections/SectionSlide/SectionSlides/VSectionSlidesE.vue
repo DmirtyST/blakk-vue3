@@ -127,6 +127,11 @@
       &_title {
         align-items: flex-start;
       }
+      &_sub {
+        span {
+          opacity: 1;
+        }
+      }
     }
   }
 </style>
