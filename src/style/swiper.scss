@@ -1,0 +1,38 @@
+.swiper-pagination{
+   
+    display: flex;
+    justify-content: center;
+    &-bullets{
+        display: inline-flex;
+        gap: 18px;
+        padding-bottom: 30px;
+    }
+    .swiper-pagination-bullet {
+        background: transparent;
+        border: 2px solid #FFFFFF;
+        opacity: 1;
+        width: 14px;
+        height: 14px;
+        bottom: 40px;
+        transition: all ease .4s;
+      }
+      .swiper-pagination-bullet-active {
+        background: #FFFFFF;
+        transition: all ease .4s;
+      }
+}
+
+@media (max-width:776px) {
+  .swiper-pagination{
+   
+   
+    &-bullets{
+        display: inline-flex;
+        gap: 15px;
+        padding-bottom: 30px;
+    }
+    
+  
+
+}
+}
