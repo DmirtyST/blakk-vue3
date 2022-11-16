@@ -2,7 +2,7 @@
   <section class="sectionSlide">
     <VFigure :color="figure" />
     <div class="sectionSlide_img">
-      <VCenteredItem :path="path" />
+      <VCenteredItem :path="path" :webp="webp" />
     </div>
     <slot></slot>
   </section>
@@ -17,6 +17,11 @@
       default: '',
     },
     path: {
+      type: String,
+      default: '',
+    },
+
+    webp: {
       type: String,
       default: '',
     },

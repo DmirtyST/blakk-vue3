@@ -10,7 +10,7 @@
     :is="item.section"
     :flex="item.flex"
     :path="item.path"
-    :pathWebp="item.pathWebp"
+    :webp="item.webp"
   >
     <VGrid>
       <VItemSectionImg
@@ -63,7 +63,7 @@
       src: slide1,
       srcWepb: slide1Wepb,
       flex: 'start',
-      pathWebp: bot1Webp,
+      webp: bot1Webp,
     },
     {
       id: 2,
@@ -75,7 +75,7 @@
       srcWepb: slide2Wepb,
       position: 'right',
       flex: 'end',
-      pathWebp: bot2Webp,
+      webp: bot2Webp,
     },
     {
       id: 3,
@@ -84,7 +84,7 @@
       path: bot3,
       src: slide3,
       srcWepb: slide3Wepb,
-      pathWebp: bot3Webp,
+      webp: bot3Webp,
     },
     {
       id: 4,
@@ -95,7 +95,7 @@
       src: slide4,
       srcWepb: slide4Wepb,
       position: 'right',
-      pathWebp: bot4Webp,
+      webp: bot4Webp,
     },
     {
       id: 5,
@@ -104,7 +104,7 @@
       path: bot5,
       src: slide5,
       srcWepb: slide5Wepb,
-      pathWebp: bot5Webp,
+      webp: bot5Webp,
     },
   ];
 </script>

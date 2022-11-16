@@ -5,7 +5,7 @@
       :class="isVisible === true ? ' centeredItem_image' : 'centeredItem_image-active'"
     >
       <picture>
-        <source :srcset="pathWebp" />
+        <source :srcset="webp" />
         <img :src="path" :alt="alts" />
       </picture>
     </div>
@@ -29,7 +29,7 @@
       type: String,
       default: '',
     },
-    pathWebp: {
+    webp: {
       type: String,
       default: '',
     },

@@ -4,13 +4,13 @@
       <swiper-slide v-for="item in data" :key="item.id"
         ><div class="banner_slide">
           <div class="banner-slide_substrate"></div>
-          <img :src="item.path" alt="" />
+          <picture>
+            <source :srcset="item.webp" />
+            <img :src="item.path" alt="slide" />
+          </picture>
           <VContainer width="1177">
             <div class="banner-slide_row">
               <div class="banner-slide_shape">
-                <picture>
-                  <source :srcset="item.pathWebp" />
-                </picture>
                 <img :src="item.shape" alt="slide" />
               </div>
 
@@ -40,12 +40,12 @@
     type: 'bullets',
   };
   const data = [
-    {id: 1, path: slide, shape: shapeBanner, pathWebp: slideWebp},
-    {id: 2, path: slide, shape: shapeBanner, pathWebp: slideWebp},
-    {id: 3, path: slide, shape: shapeBanner, pathWebp: slideWebp},
-    {id: 4, path: slide, shape: shapeBanner, pathWebp: slideWebp},
-    {id: 5, path: slide, shape: shapeBanner, pathWebp: slideWebp},
-    {id: 6, path: slide, shape: shapeBanner, pathWebp: slideWebp},
+    {id: 1, path: slide, shape: shapeBanner, webp: slideWebp},
+    {id: 2, path: slide, shape: shapeBanner, webp: slideWebp},
+    {id: 3, path: slide, shape: shapeBanner, webp: slideWebp},
+    {id: 4, path: slide, shape: shapeBanner, webp: slideWebp},
+    {id: 5, path: slide, shape: shapeBanner, webp: slideWebp},
+    {id: 6, path: slide, shape: shapeBanner, webp: slideWebp},
   ];
 </script>
 
