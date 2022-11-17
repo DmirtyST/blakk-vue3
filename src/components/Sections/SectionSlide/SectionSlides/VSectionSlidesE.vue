@@ -128,9 +128,6 @@
         align-items: flex-start;
       }
       &_sub {
-        span {
-          opacity: 1;
-        }
       }
     }
   }
