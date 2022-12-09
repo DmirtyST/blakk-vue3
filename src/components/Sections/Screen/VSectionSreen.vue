@@ -104,7 +104,7 @@
   @media (max-width: 676px) {
     .screen {
       &_row {
-        min-height: 667px;
+        height: 667px;
         padding: 0 5px;
         padding-bottom: 50px;
       }

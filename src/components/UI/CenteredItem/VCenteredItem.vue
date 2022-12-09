@@ -15,9 +15,9 @@
 <script setup>
   import {ref} from 'vue';
   import {useIntersectionObserver} from '@vueuse/core';
-  const img = ref(null);
+  const item = ref(null);
   const isVisible = ref(false);
-  const {stop} = useIntersectionObserver(img, ([{isIntersecting}], observerElement) => {
+  const {stop} = useIntersectionObserver(item, ([{isIntersecting}], observerElement) => {
     isVisible.value = isIntersecting;
     if (isIntersecting) {
       stop();

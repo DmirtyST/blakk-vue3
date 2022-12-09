@@ -1,5 +1,5 @@
 <template>
-  <FElementForm v-if="sendMessage === false" :submit="submitForm" class="formFeedback">
+  <FElementForm name="contact" v-if="sendMessage === false" :submit="submitForm" class="formFeedback"  data-netlify="true" >
     <FElementController :error="v.name.$errors" class="formFeedback_controll">
       <FElementInput
         v-model:value="v.name.$model"
