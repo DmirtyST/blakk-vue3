@@ -1,5 +1,5 @@
 <template>
-  <form  name="contact" netlify @submit.prevent="submit" class="form"><slot></slot></form>
+  <form  name="contact" method="POST" data-netlify="true" @submit.prevent="submit" class="form"><slot></slot></form>
 </template>
 
 <script setup>
