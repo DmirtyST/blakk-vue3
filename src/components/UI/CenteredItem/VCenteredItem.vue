@@ -1,13 +1,14 @@
 <template>
   <div :class="['centeredItem', `centeredItem_${flex}`]">
     <div
-      ref="img"
+      ref="item"
       :class="isVisible === true ? ' centeredItem_image' : 'centeredItem_image-active'"
     >
       <picture>
         <source :srcset="webp" />
         <img :src="path" width="160" height="520" :alt="alts" />
       </picture>
+    
     </div>
   </div>
 </template>
