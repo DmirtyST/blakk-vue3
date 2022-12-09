@@ -7,6 +7,7 @@
       <picture>
         <source :srcset="webp" />
         <img :src="path" width="160" height="520" :alt="alts" />
+
       </picture>
     
     </div>
