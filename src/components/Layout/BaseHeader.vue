@@ -24,7 +24,7 @@
 </template>
 
 <script setup>
-  import logo from '../Image/logo.png';
+  import logo from '@/assets/logo.png';
   import VSvg from '../UI/SVG/VSvg.vue';
 </script>
 

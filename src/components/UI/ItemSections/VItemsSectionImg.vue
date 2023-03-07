@@ -30,11 +30,11 @@
 
 <script setup>
   import VCenteredItem from '../CenteredItem/VCenteredItem.vue';
-  import BDesk from '../../Image/BDesk.png';
-  import EDesk from '../../Image/EDesk.png';
-  import SDesk from '../../Image/SDesk.png';
-  import CDesk from '../../Image/CDesk.png';
-  import GDesk from '../../Image/GDesk.png';
+  import BDesk from '@/assets/BDesk.png';
+  import EDesk from '@/assets/EDesk.png';
+  import SDesk from '@/assets/SDesk.png';
+  import CDesk from '@/assets/CDesk.png';
+  import GDesk from '@/assets/GDesk.png';
   import VImg from '../Img/VImg.vue';
 
   const props = defineProps({

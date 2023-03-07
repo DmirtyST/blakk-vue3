@@ -29,7 +29,7 @@
 
 <script setup>
   import VContainer from '../UI/Container/VContainer.vue';
-  import footerLogo from '../Image/logoFooter.png';
+  import footerLogo from '@/assets/logoFooter.png';
   import VSvg from '../UI/SVG/VSvg.vue';
   import VSectionFeedback from '../Sections/Feedback/VSectionFeedback.vue';
   import VPopup from '../UI/Popup/VPopup.vue';

@@ -28,12 +28,12 @@
   import 'swiper/scss';
   import 'swiper/scss/pagination';
   import 'swiper/scss/effect-fade';
-  import slide from '../../Image/slide.png';
-  import slideWebp from '../../Image/slide.webp';
-  import shapeBanner from '../../Image/shabeBanner.png';
+  import slide from '@/assets/slide.png';
+  import slideWebp from '@/assets/slide.webp';
+  import shapeBanner from '@/assets/shabeBanner.png';
   import {Pagination} from 'swiper';
-  import VButton from '../../UI/Button/VButton.vue';
-  import VContainer from '../../UI/Container/VContainer.vue';
+  import VButton from '@comps/UI/Button/VButton.vue';
+  import VContainer from '@comps/UI/Container/VContainer.vue';
   const modules = [Pagination];
   const pagination = {
     clickable: true,

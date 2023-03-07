@@ -34,8 +34,8 @@
 </template>
 
 <script setup>
-  import VHtag from '../../../UI/Htag/VHtag.vue';
-  import VButton from '../../../UI/Button/VButton.vue';
+  import VHtag from '@comps/UI/Htag/VHtag.vue';
+  import VButton from '@comps/UI/Button/VButton.vue';
   import {ref} from 'vue';
   import {useIntersectionObserver} from '@vueuse/core';
   const item = ref(null);

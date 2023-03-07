@@ -40,7 +40,7 @@
   .Htag {
     color: #ffffff;
     font-weight: 400;
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     position: relative;
     z-index: 1;
 

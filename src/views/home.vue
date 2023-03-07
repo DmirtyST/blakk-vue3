@@ -27,33 +27,33 @@
 </template>
 
 <script setup>
-  import VSectionBanner from '../components/Sections/Banner/VSectionBanner.vue';
-  import VSectionSreen from '../components/Sections/Screen/VSectionSreen.vue';
-  import VSectionSlide from '../components/Sections/SectionSlide/VSectionSlide.vue';
-  import VGrid from '../components/UI/Grid/VGrid.vue';
-  import VItemSection from '../components/UI/ItemSections/VItemsSection.vue';
-  import bot1 from '../components/Image/bot1.png';
-  import bot2 from '../components/Image/bot2.png';
-  import bot3 from '../components/Image/bot3.png';
-  import bot4 from '../components/Image/bot4.png';
-  import bot5 from '../components/Image/bot5.png';
-  import bot1Webp from '../components/Image/bot1.webp';
-  import bot2Webp from '../components/Image/bot2.webp';
-  import bot3Webp from '../components/Image/bot3.webp';
-  import bot4Webp from '../components/Image/bot4.webp';
-  import bot5Webp from '../components/Image/bot5.webp';
-  import slide1 from '../components/Image/slide1.png';
-  import slide2 from '../components/Image/slide2.png';
-  import slide3 from '../components/Image/slide3.png';
-  import slide4 from '../components/Image/slide4.png';
-  import slide5 from '../components/Image/slide5.png';
-  import slide1Wepb from '../components/Image/slide1.webp';
-  import slide2Wepb from '../components/Image/slide2.webp';
-  import slide3Wepb from '../components/Image/slide3.webp';
-  import slide4Wepb from '../components/Image/slide4.webp';
-  import slide5Wepb from '../components/Image/slide5.webp';
+  import VSectionBanner from '@comps/Sections/Banner/VSectionBanner.vue';
+  import VSectionSreen from '@comps/Sections/Screen/VSectionSreen.vue';
+  import VSectionSlide from '@comps/Sections/SectionSlide/VSectionSlide.vue';
+  import VGrid from '@comps/UI/Grid/VGrid.vue';
+  import VItemSection from '@comps/UI/ItemSections/VItemsSection.vue';
+  import bot1 from '@/assets/bot1.png';
+  import bot2 from '@/assets/bot2.png';
+  import bot3 from '@/assets/bot3.png';
+  import bot4 from '@/assets/bot4.png';
+  import bot5 from '@/assets/bot5.png';
+  import bot1Webp from '@/assets/bot1.webp';
+  import bot2Webp from '@/assets/bot2.webp';
+  import bot3Webp from '@/assets/bot3.webp';
+  import bot4Webp from '@/assets/bot4.webp';
+  import bot5Webp from '@/assets/bot5.webp';
+  import slide1 from '@/assets/slide1.png';
+  import slide2 from '@/assets/slide2.png';
+  import slide3 from '@/assets/slide3.png';
+  import slide4 from '@/assets/slide4.png';
+  import slide5 from '@/assets/slide5.png';
+  import slide1Wepb from '@/assets/slide1.webp';
+  import slide2Wepb from '@/assets/slide2.webp';
+  import slide3Wepb from '@/assets/slide3.webp';
+  import slide4Wepb from '@/assets/slide4.webp';
+  import slide5Wepb from '@/assets/slide5.webp';
 
-  import VItemSectionImg from '../components/UI/ItemSections/VItemsSectionImg.vue';
+  import VItemSectionImg from '@comps/UI/ItemSections/VItemsSectionImg.vue';
   const dataSections = [
     {
       id: 1,

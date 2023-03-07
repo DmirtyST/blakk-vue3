@@ -9,8 +9,8 @@
 </template>
 
 <script setup>
-  import VFigure from '../../../components/UI/Figure/VFigure.vue';
-  import VCenteredItem from '../../UI/CenteredItem/VCenteredItem.vue';
+  import VFigure from '@/components/UI/Figure/VFigure.vue';
+  import VCenteredItem from '@comps/UI/CenteredItem/VCenteredItem.vue';
   const props = defineProps({
     figure: {
       type: String,

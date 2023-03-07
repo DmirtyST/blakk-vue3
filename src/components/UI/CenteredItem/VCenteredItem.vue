@@ -4,12 +4,7 @@
       ref="item"
       :class="isVisible === true ? ' centeredItem_image' : 'centeredItem_image-active'"
     >
-      <picture>
-        <source :srcset="webp" />
-        <img :src="path" width="160" height="520" :alt="alts" />
-
-      </picture>
-    
+      <img :src="path" :srcset="webp" width="160" height="520" :alt="alts" />
     </div>
   </div>
 </template>

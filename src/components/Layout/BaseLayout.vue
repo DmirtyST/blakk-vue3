@@ -8,7 +8,6 @@
 </template>
 
 <script setup>
-  import BaseHeader from './BaseHeader.vue';
   import BaseFooter from './BaseFooter.vue';
 </script>
 

@@ -26,18 +26,18 @@
 </template>
 
 <script setup>
-  import VHtag from '../../UI/Htag/VHtag.vue';
-  import VTypography from '../../UI/Typography/VTypography.vue';
-  import VSvg from '../../UI/SVG/VSvg.vue';
-  import VContainer from '../../UI/Container/VContainer.vue';
-  import screen from '../../Image/screen.png';
-  import screenTablet from '../../Image/screenTablet.png';
-  import screenMobile from '../../Image/screenMobile.png';
-  import screenWebp from '../../Image/screen.webp';
-  import screenTabletWebp from '../../Image/screenTablet.webp';
-  import screenMobileWebp from '../../Image/screenMobile.webp';
-  import BaseHeader from '../../Layout/BaseHeader.vue';
-  import VImg from '../../UI/Img/VImg.vue';
+  import VHtag from '@comps/UI/Htag/VHtag.vue';
+  import VTypography from '@comps/UI/Typography/VTypography.vue';
+  import VSvg from '@comps/UI/SVG/VSvg.vue';
+  import VContainer from '@comps/UI/Container/VContainer.vue';
+  import screen from '@/assets/screen.png';
+  import screenTablet from '@/assets/screenTablet.png';
+  import screenMobile from '@/assets/screenMobile.png';
+  import screenWebp from '@/assets/screen.webp';
+  import screenTabletWebp from '@/assets/screenTablet.webp';
+  import screenMobileWebp from '@/assets/screenMobile.webp';
+  import BaseHeader from '@comps/Layout/BaseHeader.vue';
+  import VImg from '@comps/UI/Img/VImg.vue';
 </script>
 
 <style lang="scss" scoped>

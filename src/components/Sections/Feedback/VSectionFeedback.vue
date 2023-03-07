@@ -13,10 +13,10 @@
 </template>
 
 <script setup>
-  import feedbackBg from '../../Image/feedback.png';
-  import feedbackBgWebp from '../../Image/feedback.webp';
-  import shape from '../../Image/Shapefeedback.png';
-  import VButton from '../../UI/Button/VButton.vue';
+  import feedbackBg from '@/assets/feedback.png';
+  import feedbackBgWebp from '@/assets/feedback.webp';
+  import shape from '@/assets/Shapefeedback.png';
+  import VButton from '@comps/UI/Button/VButton.vue';
 </script>
 
 <style lang="scss" scoped>
