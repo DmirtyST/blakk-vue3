@@ -1,7 +1,7 @@
 <template>
   <div class="screen">
     <BaseHeader />
-
+    <UIVideo :play="play" />
     <picture>
       <source :srcset="`${screenMobileWebp} 550w`" media="(max-width:550px)" />
       <source :srcset="`${screenMobile} 550w`" media="(max-width:550px)" />
@@ -18,7 +18,9 @@
             >бренд, як стиль життя, що об'єднує різних чоловіків незалежно від їх роду
             занять та захоплень.
           </VTypography>
-          <div class="screen_button"><VSvg id="play" width="86" height="80" /></div>
+          <div @click="playStart" class="screen_button">
+            <VSvg id="play" width="86" height="80" />
+          </div>
         </div>
       </div>
     </VContainer>
@@ -38,19 +40,26 @@
   import screenMobileWebp from '@/assets/screenMobile.webp';
   import BaseHeader from '@comps/Layout/BaseHeader.vue';
   import VImg from '@comps/UI/Img/VImg.vue';
+  import {ref, defineAsyncComponent} from 'vue';
+  const UIVideo = defineAsyncComponent({
+    loader: () => import('@comps/UI/Video/UIVideo.vue'),
+  });
+  let play = ref(false);
+  let playStart = () => {
+    play.value = !play.value;
+  };
 </script>
 
 <style lang="scss" scoped>
   .screen {
     min-height: 900px;
-
     position: relative;
     z-index: 1;
-
     &_image {
       object-position: left top;
       z-index: -1;
     }
+
     &_row {
       height: 100vh;
       padding-top: 120px;
@@ -58,6 +67,7 @@
       display: flex;
       align-items: center;
       scroll-snap-align: start;
+      position: relative;
     }
     &_button {
       margin-top: 90px;
