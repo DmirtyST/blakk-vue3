@@ -1,11 +1,11 @@
 <template>
   <video
+    id="player"
     :class="play === false ? 'video' : 'video active'"
     loop
     muted
     type="video/mp4"
-    v-bind:autoplay="play"
-    playsinline
+    preload="metadata"
   >
     <source
       src="../../../assets/muzskoi-aromat-sauvage-ot-dior-s-dzonni-deppom-2016_uxQzO5Xh.mp4"
