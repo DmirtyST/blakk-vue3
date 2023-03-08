@@ -7,9 +7,7 @@
     type="video/mp4"
     preload="metadata"
   >
-    <source
-      src="../../../assets/muzskoi-aromat-sauvage-ot-dior-s-dzonni-deppom-2016_uxQzO5Xh.mp4"
-    />
+    <source src="../../../assets/screenVideo.mp4" />
   </video>
 </template>
 
