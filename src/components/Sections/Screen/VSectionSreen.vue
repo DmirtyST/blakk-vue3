@@ -40,17 +40,23 @@
   import screenMobileWebp from '@/assets/screenMobile.webp';
   import BaseHeader from '@comps/Layout/BaseHeader.vue';
   import VImg from '@comps/UI/Img/VImg.vue';
-  import {ref, defineAsyncComponent} from 'vue';
+  import {ref} from 'vue';
   import UIVideo from '@comps/UI/Video/UIVideo.vue';
 
   let play = ref(false);
 
   window.onload = function () {
-    let player = document.getElementById('player'),
-      play = document.getElementById('plays');
+    let player = document.getElementById('player');
+    let play = document.getElementById('plays');
+
     play.addEventListener('click', function () {
-      player.play();
-      player.classList.toggle('active');
+      if (player.paused) {
+        player.play();
+        player.classList.add('active');
+      } else {
+        player.pause();
+        player.classList.remove('active');
+      }
     });
   };
 </script>
