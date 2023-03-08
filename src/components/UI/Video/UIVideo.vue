@@ -1,6 +1,8 @@
 <template>
   <video
     preload="none"
+    playsinline
+    webkit-playinginline
     :class="play === false ? 'video' : 'video active'"
     :autoplay="play"
     loop
