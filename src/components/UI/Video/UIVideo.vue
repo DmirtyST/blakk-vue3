@@ -31,9 +31,11 @@
     opacity: 0;
     transition: all ease 0.4s;
     z-index: 22;
+    visibility: hidden;
     &.active {
       transition: all ease 0.4s;
       opacity: 1;
+      visibility: visible;
     }
   }
 </style>
