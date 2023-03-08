@@ -1,12 +1,11 @@
 <template>
   <video
-    preload="none"
-    webkit-playinginline
     :class="play === false ? 'video' : 'video active'"
-    :autoplay="play"
     loop
     muted
     type="video/mp4"
+    v-bind:autoplay="play"
+    playsinline
   >
     <source
       src="../../../assets/muzskoi-aromat-sauvage-ot-dior-s-dzonni-deppom-2016_uxQzO5Xh.mp4"
@@ -33,6 +32,7 @@
     object-fit: cover;
     opacity: 0;
     transition: all ease 0.4s;
+    z-index: 22;
     &.active {
       transition: all ease 0.4s;
       opacity: 1;

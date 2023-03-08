@@ -18,7 +18,7 @@
             >бренд, як стиль життя, що об'єднує різних чоловіків незалежно від їх роду
             занять та захоплень.
           </VTypography>
-          <div @click="playStart" class="screen_button">
+          <div @click="activePlayer" class="screen_button">
             <VSvg id="play" width="86" height="80" />
           </div>
         </div>
@@ -45,7 +45,8 @@
     loader: () => import('@comps/UI/Video/UIVideo.vue'),
   });
   let play = ref(false);
-  let playStart = () => {
+
+  let activePlayer = () => {
     play.value = !play.value;
   };
 </script>
