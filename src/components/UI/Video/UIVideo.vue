@@ -1,6 +1,6 @@
 <template>
   <video
-    preload="metadata"
+    preload="none"
     :class="play === false ? 'video' : 'video active'"
     :autoplay="play"
     loop
