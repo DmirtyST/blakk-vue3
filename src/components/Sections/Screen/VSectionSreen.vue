@@ -18,7 +18,7 @@
             >бренд, як стиль життя, що об'єднує різних чоловіків незалежно від їх роду
             занять та захоплень.
           </VTypography>
-          <div id="plays" class="screen_button">
+          <div @click="togglePlay" id="plays" class="screen_button">
             <VSvg id="play" width="86" height="80" />
           </div>
         </div>
@@ -43,22 +43,10 @@
   import {ref} from 'vue';
   import UIVideo from '@comps/UI/Video/UIVideo.vue';
 
-  let play = ref(false);
-
-  window.onload = function () {
-    let player = document.getElementById('player');
-    let play = document.getElementById('plays');
-
-    play.addEventListener('click', function () {
-      if (player.paused) {
-        player.play();
-        player.classList.add('active');
-      } else {
-        player.pause();
-        player.classList.remove('active');
-      }
-    });
-  };
+  const play = ref(false);
+  function togglePlay() {
+    play.value = !play.value;
+  }
 </script>
 
 <style lang="scss" scoped>

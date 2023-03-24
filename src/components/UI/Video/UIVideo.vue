@@ -1,22 +1,43 @@
 <template>
   <video
-    id="player"
+    ref="videoPlayer"
     :class="play === false ? 'video' : 'video active'"
     loop
     muted
     type="video/mp4"
-    preload="metadata"
+    preload="auto"
+    id="player"
   >
-    <source src="../../../assets/screenVideo.mp4" />
+    <source :src="videoBg" />
   </video>
 </template>
 
 <script setup>
+  import {watchEffect, onMounted, onBeforeUnmount} from 'vue';
+  import videoBg from '@/assets/screenVideo.mp4';
+
   const props = defineProps({
     play: {
       type: Boolean,
       default: false,
     },
+  });
+
+  let player = null;
+
+  onMounted(() => {
+    player = document.getElementById('player');
+    watchEffect(() => {
+      if (props.play) {
+        player.play();
+      } else {
+        player.pause();
+      }
+    });
+  });
+
+  onBeforeUnmount(() => {
+    player = null;
   });
 </script>
 
@@ -32,10 +53,11 @@
     transition: all ease 0.4s;
     z-index: 22;
     visibility: hidden;
-    &.active {
-      transition: all ease 0.4s;
-      opacity: 1;
-      visibility: visible;
-    }
+  }
+
+  .video.active {
+    transition: all ease 0.4s;
+    opacity: 1;
+    visibility: visible;
   }
 </style>
