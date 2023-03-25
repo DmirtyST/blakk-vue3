@@ -40,9 +40,10 @@
   import screenMobileWebp from '@/assets/screenMobile.webp';
   import BaseHeader from '@comps/Layout/BaseHeader.vue';
   import VImg from '@comps/UI/Img/VImg.vue';
-  import {ref} from 'vue';
-  import UIVideo from '@comps/UI/Video/UIVideo.vue';
-
+  import {ref, defineAsyncComponent} from 'vue';
+  const UIVideo = defineAsyncComponent({
+    loader: () => import('@comps/UI/Video/UIVideo.vue'),
+  });
   const play = ref(false);
   function togglePlay() {
     play.value = !play.value;
@@ -90,6 +91,7 @@
       &_row {
         height: auto;
         min-height: 1024px;
+        position: relative;
         padding-top: 0px;
         padding-bottom: 10px;
       }
